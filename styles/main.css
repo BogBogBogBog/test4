@@ -1,0 +1,364 @@
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: "Kanit", sans-serif;
+    list-style: none;
+    /* border: 1px solid aliceblue; */
+}
+
+body {
+    background-color: rgb(13 13 13);
+    background-position: center;
+    max-width: 1200px;
+    max-height: 100%;
+    margin: 0 auto;
+}
+
+
+.bgcolor {
+    background-color: #0d1216;
+    box-shadow: black 0px 0px 20px;
+}
+
+/* header */
+
+header {
+    overflow: hidden;
+    background-image: linear-gradient(to bottom, transparent 80%, #0d1216 100%),
+            url(../public/assets/banner/Minecraft480E4.png);  
+    height: 480px;
+    
+}
+
+nav {
+    display: block;
+    height: 80px;
+    width: 100%;
+    margin-top: 400px;
+    
+    ul {
+        float: right;
+        margin-right: 10%;
+    }
+
+    ul li {
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 5px;
+    }
+
+    ul li a {
+        font-size: 18px;
+        color: aliceblue;
+        padding: 10px 13px;
+        font-weight: bolder;
+        border-color: 2.5px solid whitesmoke;
+    }
+
+    a.active,a:hover {
+        font-weight: bolder;
+        border-bottom: 2.5px solid whitesmoke;
+    }
+
+    label.logotxt {
+        font-size: 28px;
+        line-height: 80px;
+        margin-left: 10%;
+        font-weight: bold;
+        color: aliceblue;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    label.logoimg {
+        line-height: 80px;
+        margin: 0px 10%;
+        cursor: pointer;
+    }
+}
+
+
+
+/* main */
+
+main {
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 900px 300px;
+    grid-template-areas: 
+    "context sidebar";
+}
+
+section {
+    padding: 35px 0;
+    grid-area: context;
+    
+        .section-title {
+            display: block;
+            font-size: 22px;
+            margin: 10px auto;
+            font-weight: bolder;
+            width: 90%;
+            text-align: center;
+        }
+
+        .section-subtitle {
+            display: block;
+            font-size: 20px;
+            margin: 50px 5%;
+            text-align: left;
+            border-bottom: 2px solid aliceblue;
+            font-weight: 500;
+        }
+                
+        .context {
+            display: block;
+            font-size: 20px;
+            margin: 50px 7%;
+            font-weight: 300;
+        }
+        
+        ul.context li{
+            list-style: disc inside;
+        }
+
+        ul.context li {
+            list-style: disc inside;
+        }
+        
+        ol.context li{
+            list-style: decimal inside;
+        }
+
+        .context-table {
+            display: table;
+            margin: 10px auto;
+            width: 90%;
+            font-size: 18px;
+            font-weight: 300;
+            border-collapse: collapse;
+        }
+
+        .context-table caption {
+            font-size: 16px;
+            padding: 10px;
+            text-align: left;
+            margin: 0;
+            color : aliceblue;
+        }
+
+        .context-table th {
+            padding: 7px 10px;
+            background-color: rgb(21, 29, 36);
+            border: 1px solid #CCC;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .context-table td {
+            padding: 7px 10px;
+            background-color: rgb(41, 49, 56);
+            border: 1px solid #CCC;
+            text-align: left;
+        }
+
+        .context-table td .table-img {
+            display: inline;
+            margin: auto 0;
+            width: 55px;
+            vertical-align: middle;
+        }
+
+        .context-table td .table-name {
+            display: inline;
+            margin: auto 10px;
+            padding: 0;
+            vertical-align: middle;
+        }
+
+        .context-img {
+            display: block;
+            margin: 30px auto;
+            width: 75%;
+        }
+
+
+}
+
+aside {
+    padding: 35px 0;
+    margin-right: 10px;
+    grid-area: sidebar;
+    background-color: #0d1216;
+
+    .aside-title {
+        font-size: 18px;
+        font-weight: bolder;
+        text-align: right;
+        margin: 0 5%;
+        padding: 10px 0;
+        border-bottom: 2px solid whitesmoke;
+    }
+
+    .source-content img {
+        display: block;
+        width: 180px;
+        margin: 45px auto;
+    }
+
+    .nax img {
+        width: 180px;
+        display: block;
+        margin: 30px auto;
+        padding: 15px 0;
+    }
+
+    .source-content img:hover ,.nax img:hover {
+        box-shadow: 0 0 13px 3px black;
+    }
+    
+
+}
+
+
+/* footer */
+
+footer {
+    background-color: rgb(21, 29, 36);
+    display: block;
+    clear: both;
+    text-align: center;
+    height: 250px;
+}
+
+.first-footer {
+    display: flex;
+    margin: 0 4%;
+    padding: 0;
+    height: 40%;
+    border-bottom: 1px solid whitesmoke;
+
+    .first-footer-img {
+        display: inline-block;
+        width: 50px;
+        max-height: fit-content;
+        margin: auto 0;
+    }
+
+    .first-footer-txt {
+        display: inline-block;
+        margin: auto 20px;
+        width: fit-content;
+        color: aliceblue;
+
+    }
+}
+
+.second-footer {
+    display: block;
+    margin: 0 4%;
+    padding: 0;
+    height: 60%;
+    
+
+    .second-footer-txt {
+        height: 50%;
+        width: 100%;
+        display: flex;
+        color: aliceblue;
+        justify-content: left;
+        align-items: center;
+        cursor: default;
+    }
+}
+/* 
+responsive not done yet
+@media screen and (max-width: 720px) {
+
+
+    nav {
+        width: auto;
+    }
+    
+    nav ul {
+        float: none; 
+        margin-right: 0;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin: 0px 0;
+        line-height: auto;
+    }
+
+    nav ul li a {
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+
+    .context {
+        font-size: 8px;
+    }
+
+    aside {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .aside {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        padding: auto;
+        margin-top: 50px;
+        margin-bottom: 0;
+    }
+
+    .section {
+        font-size: 12px;
+    }
+
+    a.about {
+        display: inline;
+        margin: 0;
+    }
+
+    label.logotxt {
+        display: block;
+        margin: auto;
+        text-align: center;
+        border-bottom: 2px solid aliceblue;
+    }
+
+    .nax img {
+        display: block;
+        padding: 25px 0;
+    }
+
+    main {
+        margin-inline: 3% ;
+        margin-top: 5%;
+        padding-top: 30px;
+        display: block;
+    }
+
+    .divider {
+        display: none;
+    }
+
+    .nax img {
+        width: 50%;
+    }
+} */
